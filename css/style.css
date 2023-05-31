@@ -1,0 +1,222 @@
+body {
+    margin: 0;
+    padding: 0;
+    font-family: Arial, sans-serif;
+    background-image: url("../images/all.jpg");
+    background-size: cover;
+    background-position: center;
+  }
+  
+  .navbar {
+    background-image: url("../images/navbar.jpg");
+    background-size: cover;
+    background-position: center;
+    background-color: #333;
+    color: #fff;
+    display: grid;
+    grid-template-columns: 1fr;
+    align-items: center;
+    padding: 10px;
+  }
+  
+  .navbar-logo {
+    width: 120px;
+    height: 70px;
+    margin-right: 10px;
+  }
+  
+  .navbar-links {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  
+  .navbar-link {
+    background-color: #333;
+    border-radius: 10%;
+    margin: 10px 20px;
+    color: #fff;
+    text-decoration: none;
+    padding: 10px 10px;
+    transition: background-color 0.3s ease;
+  }
+  
+  .navbar-link:hover {
+    background-color: #555;
+  }
+  
+  .container {
+    position: relative;
+    text-align: center;
+    padding: 20px;
+  }
+  
+  .movie-image {
+    width: 100%;
+    max-width: 1000px;
+    margin-bottom: 20px;
+    position: relative;
+    transition: all 0.3s ease;
+    border-radius: 5%;
+  }
+  
+  .insideimg {
+    background-color: rgba(0, 128, 128, 0.8);
+    padding: 20px;
+    border-radius: 10px;
+    color: #fff;
+    transition: all 0.3s ease;
+  }
+  
+  .movie-title {
+    font-size: 24px;
+    font-weight: bold;
+    margin-bottom: 10px;
+    transition: all 0.3s ease;
+  }
+  
+  .movie-description {
+    font-size: 18px;
+    margin-bottom: 20px;
+    transition: all 0.3s ease;
+  }
+  
+  .button-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transition: all 0.3s ease;
+  }
+  
+  .button {
+    display: inline-block;
+    padding: 10px 20px;
+    background-color: #333;
+    color: #fff;
+    text-decoration: none;
+    border-radius: 5px;
+    margin-right: 10px;
+    transition: background-color 0.3s ease;
+  }
+  
+  .button:hover {
+    background-color: #555;
+  }
+
+  .footer {
+    background-color: #333;
+    color: #fff;
+    padding: 20px;
+    text-align: center;
+  }
+  
+  @media (max-width: 768px) {
+    .container {
+      padding: 10px;
+    }
+    
+    .movie-title {
+      font-size: 20px;
+    }
+    
+    .movie-description {
+      font-size: 16px;
+    }
+    
+    .navbar {
+      grid-template-columns: 1fr;
+    }
+    
+    .navbar-links {
+      align-items: center;
+  
+    }
+    .navbar-links li{
+      margin: 5px 5px;
+  
+    }
+    .navbar-link {
+      padding: 5px 5px;
+
+    }
+    
+    .movie-image {
+      max-width: 100%;
+      margin-bottom: 10px;
+    }
+    
+    .image-grid {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+    }
+    
+    .movie-image-small {
+      width: 100%;
+      max-width: 500px;
+      height: auto;
+      margin-bottom: 10px;
+      transition: all 0.3s ease;
+      border-radius: 5%;
+    }
+
+    .footer {
+      font-size: 14px;
+    }
+  }
+  
+  @media (min-width: 769px) {
+
+      .footer {
+      font-size: 16px;
+    }
+    .navbar {
+      grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+    }
+    
+    .navbar-links {
+      flex-direction: row;
+      justify-content: flex-start;
+    }
+    
+    .container {
+      padding: 40px;
+    }
+    
+    .movie-title {
+      font-size: 32px;
+    }
+    
+    .movie-description {
+      font-size: 22px;
+    }
+    
+    .image-grid {
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      gap: 10px;
+      justify-items: center;
+
+    }
+    
+    .movie-image-small {
+      width: 100%;
+      max-width: 500px;
+      height: auto;
+      margin-bottom: 10px;
+      transition: all 0.3s ease;
+      border-radius: 5%;
+    }
+  }
+  
+  .button:hover,
+  .navbar-link:hover,
+  .movie-image:hover,
+  .movie-title:hover,
+  .movie-description:hover,
+  .movie-image-small:hover {
+    transform: scale(1.05);
+  }
